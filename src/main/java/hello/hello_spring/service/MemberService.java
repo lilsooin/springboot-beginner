@@ -9,7 +9,6 @@ import java.util.Optional;
 
 // 서비스는 메서드명이 비즈니스와 가까운 메서드명 사용
 public class MemberService {
-
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     /**
