@@ -18,7 +18,6 @@ public class MemoryMemberRepositoryTest {
         repository.clearStore();
     }
 
-
     @Test
     public void save() {
         Member member = new Member();
