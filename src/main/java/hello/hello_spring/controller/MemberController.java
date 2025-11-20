@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 
 @Controller // 컴포넌트 스캔
 public class MemberController {
-
     private final MemberService memberService;
 
     @Autowired
