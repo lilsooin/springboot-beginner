@@ -12,7 +12,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
-
     private DataSource dataSource;
 
     @Autowired
