@@ -3,12 +3,14 @@ package hello.hello_spring.service;
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 // 서비스는 메서드명이 비즈니스와 가까운 메서드명 사용
 @Service
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
