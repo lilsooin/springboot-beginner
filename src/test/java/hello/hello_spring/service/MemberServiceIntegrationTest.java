@@ -16,7 +16,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest
 @Transactional
 class MemberServiceIntegrationTest {
-
     // 테스트는 필드 인젝션으로 하면 편하다
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
