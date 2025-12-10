@@ -26,11 +26,6 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
-    @Bean
-    public TimeTraceApp timeTraceApp() {
-        return new TimeTraceApp();
-    }
-
     /*@Bean
     public MemberRepository memberRepository() {
         // return new MemoryMemberRepository();

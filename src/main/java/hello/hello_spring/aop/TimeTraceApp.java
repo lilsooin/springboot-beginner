@@ -3,8 +3,10 @@ package hello.hello_spring.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
 
 @Aspect
+@Component   // ★ 추가: Bean을 SpringConfig가 아니라 컴포넌트 스캔으로 등록
 public class TimeTraceApp {
     @Around("execution(* hello.hello_spring..*(..))")
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
